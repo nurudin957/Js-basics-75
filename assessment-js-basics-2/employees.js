@@ -110,11 +110,16 @@ const  empTwo = new Employee("Nick", "Sunday Afternoons");
 
 //CODE HERE
 
+const manager = new Manager("Winston", "weekday mornings, weekday afternoons", ["Cece, Schmidt"])
+
 
 
 /*
     Call the `getEmployees` method on the
     `manager` object.  
+    
+    
+    
 */
 
 //CODE HERE
@@ -126,6 +131,8 @@ const  empTwo = new Employee("Nick", "Sunday Afternoons");
 */
 
 //CODE HERE 
+
+
 
 /*
     Call the `getEmployees` method on the
