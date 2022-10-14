@@ -84,6 +84,15 @@ canWeDeliver();
 */
 
 // CODE HERE
+onst canWeDeliverTwo = (zipCode) => {
+    deliveryAreaZipCodes.includes(zipCode)
+    return yesWeCanDeliver
+} 
+
+const yesWeCanDeliver = () => console.log("You're in the delivery zone!")
+const NoWeCanNotDeliver = () => console.log("Sorry, you're not in the delivery zone!")
+
+canWeDeliverTwo("85205")
 
 
 //////////////////PROBLEM 3////////////////////
@@ -120,6 +129,9 @@ const deals = [
 */
 
 //CODE HERE
+
+let newDeal = deals.title 
+console.log(newDeal)
 
 
 
