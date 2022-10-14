@@ -35,7 +35,7 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+// const summedPrice = cart.reduce(a, c) => (a + c.price)
 console.log(cart.price);
 
 
@@ -55,6 +55,15 @@ console.log(cart.price);
 */
 
 //CODE HERE
+
+
+const calcFinalPrice = (cartTotal, couponValue, tax) => {
+    const applyTaxCoupon = cart.reduce((a, c) => a + c.price*(1-tax))
+    return (applyTaxCoupon - couponValue)
+}
+
+calcFinalPrice(cart, 1, 0.6)
+console.log(cart)
 
 
 
@@ -80,6 +89,15 @@ console.log(cart.price);
 
 /*
     TEXT ANSWER HERE
+    The restaurant would need: 
+// 1.The customers Name . The restaurant needs to know who's ordering the food. this Should be a String. 
+// 2. Phone Number or email . The restaurant needs to know contact number to get notified. Should be a string datatype. Could also be a number or a text  
+// 3. Any food allergies. The restaurant needs to know if the customer has any  allergies.  this Should be a string
+// 4. Zipcode.The restaurant needs to know the zicode to check the delivery availability. Shoud be a number datatype. 
+// 5. Whether the customer would like to receive a notification  from the restaurant to confirm their orders or update them on their deliveries
+    
+    
+    
 
 */
 
@@ -89,3 +107,16 @@ console.log(cart.price);
 */
 
 //CODE HERE
+
+const customer =[{
+    name : "Abdi"},
+    {phoneNumber: '222-222-2222'},
+    {Allergies: "Peanuts"},
+    {Zipcode: 55021},
+    {receiveText: ["Yes", "No"]}
+]
+
+
+
+
+
